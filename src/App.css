@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5fafd;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Headings */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Performance Overview */
+.performance-overview {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score {
+  text-align: center;
+  width: 30%;
+  background-color: #f7fafd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 40px;
+  color: #4186ff;
+  margin-bottom: 10px;
+}
+
+.score h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #666;
+}
+
+.score-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #34a853;
+}
+
+/* Adjust colors for Mobile and Load Time */
+.score:nth-child(2) .score-value {
+  color: #f4b400;
+}
+
+.score:nth-child(3) .score-value {
+  color: #4186ff;
+}
+
+/* Speed Optimizations */
+.speed-optimizations {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.toggle-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.toggle-option span {
+  font-size: 16px;
+  color: #333;
+}
+
+.toggle-option:last-child {
+  border-bottom: none;
+}
+
+/* How It Works */
+.how-it-works {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.how-it-works ul {
+  list-style: none;
+  padding: 0;
+}
+
+.how-it-works ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+/* FAQ Section */
+.faq {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.faq details {
+  margin-bottom: 10px;
+}
+
+.faq summary {
+  font-size: 16px;
+  cursor: pointer;
+  color: #4186ff;
+  font-weight: bold;
+}
+
+.faq p {
+  margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Support Section */
+.support {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.support-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.chat-button {
+  background-color: #4186ff;
+}
+
+.chat-button:hover {
+  background-color: #357ae8;
+}
+
+.email-button {
+  background-color: #34a853;
+}
+
+.email-button:hover {
+  background-color: #2d7d44;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .scores {
+    flex-direction: column;
+  }
+
+  .score {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .support-options {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
